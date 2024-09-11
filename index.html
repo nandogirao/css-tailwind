@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Tailwind></title>
+
+</head>
+
+<body class="gb-slate-100">
+
+    <header class="bg-white p-100 pt-[34px] pb-[30px]">
+        <div class="flex gap-[30px]">
+            <h1 class="logo">
+                Digital Store
+            </h1>
+            <div class="pesquisa flex-1">
+                <input type="text" placeholder="Pesquisar Produto">
+                <box-icon name='search'></box-icon>
+            </div>
+            <div class="flex gap-[30px]">
+                <a href="">Cadastre-se</a>
+                <a href="">Entrar</a>
+                <div class="carrinho">
+                    <box-icon name='cart'></box-icon>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex">
+
+                    <li><a href=""></a>Home</li>
+                    <li><a href=""></a>Produtos</li>
+                    <li><a href=""></a>Categorias</li>
+                    <li><a href=""></a>Pedidos</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'digital': '#C81C6F',
+                    },
+                    spacing: {
+                        '100': '100px',
+                        '300': '300px',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
